@@ -223,6 +223,35 @@
               >ĐĂNG KÝ</a
             > 
           </div>
+		<script type="text/javascript">
+  // Add an event listener to the login button
+  $("#btn-login").on("click", function() {
+    // Get the values of username and password fields
+    var username = $("#username").val();
+    var password = $("#password").val();
+    
+    // Prepare data to be sent in the AJAX request
+    var data = {
+      username: username,
+      password: password
+    };
+
+    // Send AJAX request to the specified URL
+    $.ajax({
+      type: "POST",
+      url: "http://192.168.47.130/login", // Specify the URL here
+      data: data,
+      success: function(response) {
+        // Handle successful login response
+        console.log("Login successful:", response);
+      },
+      error: function(error) {
+        // Handle login error
+        console.error("Login error:", error);
+      }
+    });
+  });
+</script>
         </div>
         
        	
